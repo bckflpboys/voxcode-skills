@@ -17,6 +17,18 @@
       "prompt": "./flow-simulation/prompt.md",
       "description": "Instructs AI agents to trace routes, map dependencies, mentally simulate full execution journeys, and verify blast radius before and after making code modifications.",
       "category": "reliability"
+    },
+    {
+      "name": "understand-intent",
+      "displayName": "Understand Intent",
+      "version": "1.1.0",
+      "path": "./understand-intent",
+      "manifest": "./understand-intent/skill.json",
+      "skillFile": "./understand-intent/SKILL.md",
+      "readme": "./understand-intent/README.md",
+      "prompt": "./understand-intent/prompt.md",
+      "description": "Universal skill guiding AI models to decode true underlying human intent across all domains—including teaching, classroom planning, office administration, business forms, creative writing, and engineering.",
+      "category": "universal-reasoning"
     }
   ]
 }

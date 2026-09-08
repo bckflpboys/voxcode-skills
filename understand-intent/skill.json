@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "understand-intent",
+  "displayName": "Understand Intent",
+  "version": "1.1.0",
+  "description": "Universal skill for AI models and agents to decode the user's true underlying intent, unstated goals, and creative vision across any domain—including teaching and education, office and administrative work, design and creative projects, documents, forms, images/sketches, and coding.",
+  "author": "VoxCode.app",
+  "license": "MIT",
+  "keywords": [
+    "intent-decoding",
+    "universal-assistance",
+    "education-and-teaching",
+    "lesson-planning",
+    "office-and-business",
+    "form-completion",
+    "multimodal-interpretation",
+    "vision-preservation",
+    "lateral-thinking",
+    "unspoken-requirements"
+  ],
+  "entrypoints": {
+    "agentSkill": "SKILL.md",
+    "universalDocumentation": "README.md",
+    "systemPrompt": "prompt.md",
+    "manifest": "skill.json"
+  },
+  "compatibility": {
+    "antigravity": ">=1.0.0",
+    "cursor": ">=0.40.0",
+    "claudeCode": ">=1.0.0",
+    "copilot": "all",
+    "genericLLM": "all",
+    "openaiCustomGpt": "all"
+  },
+  "triggers": [
+    "User provides brief, terse, or informal request on existing materials",
+    "Analyzing images, sketches, handwritten notes, forms, or worksheets",
+    "Teacher planning lessons, curriculum, activities, or student evaluations",
+    "Completing, updating, or expanding office documents, spreadsheets, or memos",
+    "Creative writing, marketing, or design drafts with established tone",
+    "Refactoring or completing code without imposing generic paradigms"
+  ],
+  "categories": [
+    "universal-assistance",
+    "understanding-and-reasoning",
+    "education-and-pedagogy",
+    "office-and-productivity",
+    "context-awareness"
+  ]
+}

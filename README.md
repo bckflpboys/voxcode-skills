@@ -26,6 +26,7 @@ Different AI apps, agent frameworks, and developer environments consume instruct
 | Skill | Category | Description | Links |
 | :--- | :--- | :--- | :--- |
 | **Flow Simulation** (`flow-simulation`) | Reliability & Verification | Forces AI models to trace end-to-end execution routes, analyze blast radius, mentally simulate workflows, and verify regressions before and after code changes. | [Folder](./flow-simulation) • [Doc](./flow-simulation/README.md) • [Prompt](./flow-simulation/prompt.md) |
+| **Understand Intent** (`understand-intent`) | Universal Reasoning | Decodes unstated goals across ANY domain (teaching, lesson plans, forms, business, writing, code). Proactively delivers complete packages without tunnel vision. | [Folder](./understand-intent) • [Doc](./understand-intent/README.md) • [Prompt](./understand-intent/prompt.md) |
 
 *(More skills coming soon...)*
 
@@ -35,30 +36,30 @@ Different AI apps, agent frameworks, and developer environments consume instruct
 
 ### Option 1: Install an Individual Skill
 
-If you only want a specific skill (e.g., `flow-simulation`), copy that single directory into your project:
+If you only want a specific skill (e.g., `flow-simulation` or `understand-intent`), copy that single directory into your project:
 
 #### For Antigravity / Agentic IDEs:
 ```bash
 # In your target project root
 mkdir -p .agents/skills/
-cp -r /path/to/voxcode-skills/flow-simulation .agents/skills/
+cp -r /path/to/voxcode-skills/understand-intent .agents/skills/
 ```
 
 #### For User-Global Availability (Antigravity):
 ```bash
-cp -r /path/to/voxcode-skills/flow-simulation ~/.gemini/config/skills/
+cp -r /path/to/voxcode-skills/understand-intent ~/.gemini/config/skills/
 ```
 
 #### For Cursor / Windsurf:
 Reference the skill in your `.cursorrules` or `.windsurfrules`:
 ```markdown
-# Flow Simulation Rule
-Read and strictly adhere to: ./skills/flow-simulation/README.md
+# Understand Intent Rule
+Read and strictly adhere to: ./skills/understand-intent/README.md
 ```
 
 #### For ChatGPT / Claude Projects:
-1. Open the skill's folder (e.g., [`flow-simulation/`](./flow-simulation)).
-2. Open [`prompt.md`](./flow-simulation/prompt.md).
+1. Open the skill's folder (e.g., [`understand-intent/`](./understand-intent)).
+2. Open [`prompt.md`](./understand-intent/prompt.md).
 3. Copy the text block and paste it directly into your Custom GPT or Claude Project instructions.
 
 ---
@@ -124,6 +125,22 @@ voxcode-skills/
 │   │   └── payment-checkout-flow.md    # Checkout & webhook race condition example
 │   └── resources/
 │       └── flow-diagram-templates.md   # ASCII & Mermaid reporting templates
+│
+├── understand-intent/                  # Skill: Universal Understand Intent
+│   ├── SKILL.md                        # Universal agentic standard skill file with frontmatter
+│   ├── README.md                       # Complete self-contained docs & prompt
+│   ├── prompt.md                       # Direct copy-paste system prompt
+│   ├── skill.json                      # Machine-readable JSON manifest
+│   ├── references/
+│   │   ├── intent-decoding-checklist.md # Tactical checklist for intent evaluation
+│   │   └── signal-detection-guide.md    # Clues across teaching, forms, writing & code
+│   ├── examples/
+│   │   ├── education-lesson-plan-intent.md  # Teacher whiteboard & classroom lesson case study
+│   │   ├── business-form-workflow-intent.md # Office equipment checkout form case study
+│   │   ├── document-strategy-intent.md      # Executive strategy memo & notes case study
+│   │   └── code-refactor-intent.md          # WIP code intent & optimization case study
+│   └── resources/
+│       └── intent-alignment-template.md # Multi-domain framing templates for user alignment
 │
 └── [future-skills]/                    # Future modular skills follow the same architecture
 ```
