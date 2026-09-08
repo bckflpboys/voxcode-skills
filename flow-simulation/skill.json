@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "flow-simulation",
+  "displayName": "Flow Simulation",
+  "version": "1.0.0",
+  "description": "Instructs AI models and agents to trace complete execution routes, analyze upstream/downstream interactions, mentally simulate end-to-end user and data flows, and verify blast radius before and after making code changes.",
+  "author": "VoxCode",
+  "license": "MIT",
+  "keywords": [
+    "flow-simulation",
+    "route-tracing",
+    "regression-prevention",
+    "blast-radius",
+    "state-machines",
+    "agentic-coding",
+    "system-verification"
+  ],
+  "entrypoints": {
+    "agentSkill": "SKILL.md",
+    "universalDocumentation": "README.md",
+    "systemPrompt": "prompt.md",
+    "manifest": "skill.json"
+  },
+  "compatibility": {
+    "antigravity": ">=1.0.0",
+    "cursor": ">=0.40.0",
+    "claudeCode": ">=1.0.0",
+    "copilot": "all",
+    "genericLLM": "all",
+    "openaiCustomGpt": "all"
+  },
+  "triggers": [
+    "Fix bug in workflow/flow",
+    "Modify route/endpoint/action",
+    "Auth or signup flow change",
+    "Multi-step checkout/wizard",
+    "State machine or transition logic",
+    "Data pipeline or webhook modification"
+  ],
+  "categories": [
+    "reliability",
+    "testing-and-verification",
+    "code-analysis",
+    "workflow-tracing"
+  ]
+}

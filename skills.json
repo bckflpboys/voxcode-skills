@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "voxcode-skills",
+  "version": "1.0.0",
+  "description": "A curated library of modular, installable skills for AI agents and models.",
+  "author": "VoxCode.app",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "flow-simulation",
+      "displayName": "Flow Simulation",
+      "version": "1.0.0",
+      "path": "./flow-simulation",
+      "manifest": "./flow-simulation/skill.json",
+      "skillFile": "./flow-simulation/SKILL.md",
+      "readme": "./flow-simulation/README.md",
+      "prompt": "./flow-simulation/prompt.md",
+      "description": "Instructs AI agents to trace routes, map dependencies, mentally simulate full execution journeys, and verify blast radius before and after making code modifications.",
+      "category": "reliability"
+    }
+  ]
+}
