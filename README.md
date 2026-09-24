@@ -12,12 +12,13 @@ Different AI apps, agent frameworks, and developer environments consume instruct
 
 | Format | File | Target Environment |
 | :--- | :--- | :--- |
+| **All-in-One Single File** | `FULL_SKILL.md` | Single-file IDE rules, complete copy-paste, knowledge bases, no-file-limit restrictions |
 | **Agentic Standard** | `SKILL.md` | Antigravity, Claude Code, Cline, Roo Code, OpenHands |
 | **Universal Self-Contained** | `README.md` | Web apps, prompt libraries, documentation loaders, GitHub |
 | **Direct System Prompt** | `prompt.md` | ChatGPT (Custom GPTs), Claude Projects, System Prompts |
 | **Programmatic JSON** | `skill.json` | API registries, LangChain, LlamaIndex, automated installers |
 
-> **Universal Ingestion**: If an app or service only supports importing a single markdown file or URL, simply import the skill's `README.md`. Each skill's `README.md` is 100% self-contained with full protocols, checklists, and examples.
+> **Single-File Copy-Paste (`FULL_SKILL.md`)**: If your tool, IDE, or platform only accepts a single file or a direct copy-paste without multiple sub-files, simply copy [`FULL_SKILL.md`](./flow-simulation/FULL_SKILL.md). It bundles the full instructions, checklists, case studies, and templates into one unified document.
 
 ---
 
@@ -25,10 +26,10 @@ Different AI apps, agent frameworks, and developer environments consume instruct
 
 | Skill | Category | Description | Links |
 | :--- | :--- | :--- | :--- |
-| **Flow Simulation** (`flow-simulation`) | Reliability & Verification | Forces AI models to trace end-to-end execution routes, analyze blast radius, mentally simulate workflows, and verify regressions before and after code changes. | [Folder](./flow-simulation) • [Doc](./flow-simulation/README.md) • [Prompt](./flow-simulation/prompt.md) |
-| **Understand Intent** (`understand-intent`) | Universal Reasoning | Decodes unstated goals across ANY domain (teaching, lesson plans, forms, business, writing, code). Proactively delivers complete packages without tunnel vision. | [Folder](./understand-intent) • [Doc](./understand-intent/README.md) • [Prompt](./understand-intent/prompt.md) |
-| **Understand Intent Engineer** (`understand-intent-engineer`) | Engineering & Systems | Decodes technical requirements, mathematical invariants, Big-O complexity, concurrency models, and systems architecture from technical requests. | [Folder](./understand-intent-engineer) • [Doc](./understand-intent-engineer/README.md) • [Prompt](./understand-intent-engineer/prompt.md) |
-| **Understand Intent Coder** (`understand-intent-coder`) | Coding, Design & Security | Decodes developer intent for apps, UI/UX design coherence (tokens, responsive layout, states), and OWASP defensive security defaults (sanitization, auth). | [Folder](./understand-intent-coder) • [Doc](./understand-intent-coder/README.md) • [Prompt](./understand-intent-coder/prompt.md) |
+| **Flow Simulation** (`flow-simulation`) | Reliability & Verification | Forces AI models to trace end-to-end execution routes, analyze blast radius, mentally simulate workflows, and verify regressions before and after code changes. | [Folder](./flow-simulation) • [Full Skill](./flow-simulation/FULL_SKILL.md) • [Doc](./flow-simulation/README.md) • [Prompt](./flow-simulation/prompt.md) |
+| **Understand Intent** (`understand-intent`) | Universal Reasoning | Decodes unstated goals across ANY domain (teaching, lesson plans, forms, business, writing, code). Proactively delivers complete packages without tunnel vision. | [Folder](./understand-intent) • [Full Skill](./understand-intent/FULL_SKILL.md) • [Doc](./understand-intent/README.md) • [Prompt](./understand-intent/prompt.md) |
+| **Understand Intent Engineer** (`understand-intent-engineer`) | Engineering & Systems | Decodes technical requirements, mathematical invariants, Big-O complexity, concurrency models, and systems architecture from technical requests. | [Folder](./understand-intent-engineer) • [Full Skill](./understand-intent-engineer/FULL_SKILL.md) • [Doc](./understand-intent-engineer/README.md) • [Prompt](./understand-intent-engineer/prompt.md) |
+| **Understand Intent Coder** (`understand-intent-coder`) | Coding, Design & Security | Decodes developer intent for apps, UI/UX design coherence (tokens, responsive layout, states), and OWASP defensive security defaults (sanitization, auth). | [Folder](./understand-intent-coder) • [Full Skill](./understand-intent-coder/FULL_SKILL.md) • [Doc](./understand-intent-coder/README.md) • [Prompt](./understand-intent-coder/prompt.md) |
 
 *(More skills coming soon...)*
 
@@ -115,6 +116,7 @@ voxcode-skills/
 ├── skills.json                         # Global registry manifest of all skills
 │
 ├── flow-simulation/                    # Skill: Flow Simulation
+│   ├── FULL_SKILL.md                   # Complete all-in-one single file (copy & paste)
 │   ├── SKILL.md                        # Agentic standard skill file with frontmatter
 │   ├── README.md                       # Complete self-contained docs & prompt
 │   ├── prompt.md                       # Direct copy-paste system prompt
@@ -129,6 +131,7 @@ voxcode-skills/
 │       └── flow-diagram-templates.md   # ASCII & Mermaid reporting templates
 │
 ├── understand-intent/                  # Skill: Universal Understand Intent
+│   ├── FULL_SKILL.md                   # Complete all-in-one single file (copy & paste)
 │   ├── SKILL.md                        # Universal agentic standard skill file with frontmatter
 │   ├── README.md                       # Complete self-contained docs & prompt
 │   ├── prompt.md                       # Direct copy-paste system prompt
@@ -145,6 +148,7 @@ voxcode-skills/
 │       └── intent-alignment-template.md # Multi-domain framing templates for user alignment
 │
 ├── understand-intent-engineer/         # Skill: Understand Intent Engineer
+│   ├── FULL_SKILL.md                   # Complete all-in-one single file (copy & paste)
 │   ├── SKILL.md                        # Technical agentic standard skill file with frontmatter
 │   ├── README.md                       # Universal self-contained technical docs & prompt
 │   ├── prompt.md                       # Direct copy-paste system prompt
@@ -159,6 +163,7 @@ voxcode-skills/
 │       └── technical-alignment-templates.md # High-signal engineering dialogue templates
 │
 ├── understand-intent-coder/            # Skill: Understand Intent Coder
+│   ├── FULL_SKILL.md                   # Complete all-in-one single file (copy & paste)
 │   ├── SKILL.md                        # Application & product coder standard skill file
 │   ├── README.md                       # Universal self-contained docs & prompt (UI & security)
 │   ├── prompt.md                       # Direct copy-paste system prompt

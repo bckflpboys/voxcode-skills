@@ -19,6 +19,7 @@
   ],
   "entrypoints": {
     "agentSkill": "SKILL.md",
+    "fullSkill": "FULL_SKILL.md",
     "universalDocumentation": "README.md",
     "systemPrompt": "prompt.md",
     "manifest": "skill.json"
