@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "understand-intent-coder",
+  "displayName": "Understand Intent Coder",
+  "version": "1.0.0",
+  "description": "Specialized coding skill focusing on application development, UI/UX design coherence, defensive security best practices, and deep developer intent decoding from existing codebases, design tokens, and comments.",
+  "author": "VoxCode.app",
+  "license": "MIT",
+  "keywords": [
+    "coding-intent",
+    "ui-ux-design",
+    "defensive-security",
+    "owasp",
+    "design-systems",
+    "frontend-architecture",
+    "component-design",
+    "secure-by-default",
+    "developer-experience"
+  ],
+  "entrypoints": {
+    "agentSkill": "SKILL.md",
+    "universalDocumentation": "README.md",
+    "systemPrompt": "prompt.md",
+    "manifest": "skill.json"
+  },
+  "compatibility": {
+    "antigravity": ">=1.0.0",
+    "cursor": ">=0.40.0",
+    "claudeCode": ">=1.0.0",
+    "copilot": "all",
+    "genericLLM": "all",
+    "openaiCustomGpt": "all"
+  },
+  "triggers": [
+    "Building or modifying UI components, pages, or frontend views",
+    "Adding endpoints, user authentication, or data mutation routes",
+    "Implementing file uploads, form submissions, or third-party webhooks",
+    "Refactoring code while maintaining UI/UX polish and design token consistency",
+    "Applying defensive security best practices (OWASP, input sanitization, rate limiting)",
+    "Deciphering terse developer requests on existing codebases"
+  ],
+  "categories": [
+    "application-development",
+    "ui-ux-and-design",
+    "security-and-defensive-coding",
+    "developer-experience"
+  ]
+}

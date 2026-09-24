@@ -41,6 +41,18 @@
       "prompt": "./understand-intent-engineer/prompt.md",
       "description": "Specialized engineering skill that decodes unstated technical requirements, mathematical invariants, algorithmic complexity, systems architecture, and scientific computing intent.",
       "category": "engineering-and-systems"
+    },
+    {
+      "name": "understand-intent-coder",
+      "displayName": "Understand Intent Coder",
+      "version": "1.0.0",
+      "path": "./understand-intent-coder",
+      "manifest": "./understand-intent-coder/skill.json",
+      "skillFile": "./understand-intent-coder/SKILL.md",
+      "readme": "./understand-intent-coder/README.md",
+      "prompt": "./understand-intent-coder/prompt.md",
+      "description": "Specialized application coding skill focusing on UI/UX design coherence, design token alignment, defensive security by default (OWASP), and complete user experience states.",
+      "category": "coding-and-design-security"
     }
   ]
 }

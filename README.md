@@ -28,6 +28,7 @@ Different AI apps, agent frameworks, and developer environments consume instruct
 | **Flow Simulation** (`flow-simulation`) | Reliability & Verification | Forces AI models to trace end-to-end execution routes, analyze blast radius, mentally simulate workflows, and verify regressions before and after code changes. | [Folder](./flow-simulation) • [Doc](./flow-simulation/README.md) • [Prompt](./flow-simulation/prompt.md) |
 | **Understand Intent** (`understand-intent`) | Universal Reasoning | Decodes unstated goals across ANY domain (teaching, lesson plans, forms, business, writing, code). Proactively delivers complete packages without tunnel vision. | [Folder](./understand-intent) • [Doc](./understand-intent/README.md) • [Prompt](./understand-intent/prompt.md) |
 | **Understand Intent Engineer** (`understand-intent-engineer`) | Engineering & Systems | Decodes technical requirements, mathematical invariants, Big-O complexity, concurrency models, and systems architecture from technical requests. | [Folder](./understand-intent-engineer) • [Doc](./understand-intent-engineer/README.md) • [Prompt](./understand-intent-engineer/prompt.md) |
+| **Understand Intent Coder** (`understand-intent-coder`) | Coding, Design & Security | Decodes developer intent for apps, UI/UX design coherence (tokens, responsive layout, states), and OWASP defensive security defaults (sanitization, auth). | [Folder](./understand-intent-coder) • [Doc](./understand-intent-coder/README.md) • [Prompt](./understand-intent-coder/prompt.md) |
 
 *(More skills coming soon...)*
 
@@ -156,6 +157,20 @@ voxcode-skills/
 │   │   └── systems-architecture-intent.md  # Concurrency, mutexes & backpressure case study
 │   └── resources/
 │       └── technical-alignment-templates.md # High-signal engineering dialogue templates
+│
+├── understand-intent-coder/            # Skill: Understand Intent Coder
+│   ├── SKILL.md                        # Application & product coder standard skill file
+│   ├── README.md                       # Universal self-contained docs & prompt (UI & security)
+│   ├── prompt.md                       # Direct copy-paste system prompt
+│   ├── skill.json                      # Machine-readable JSON manifest
+│   ├── references/
+│   │   ├── coder-intent-checklist.md       # UI/UX & defensive security audit checklist
+│   │   └── security-and-design-signals.md  # Clues in design tokens & security boundaries
+│   ├── examples/
+│   │   ├── ui-design-intent.md             # Dashboard metric card design & UX case study
+│   │   └── security-defensive-intent.md    # OWASP-defended file upload case study
+│   └── resources/
+│       └── coder-alignment-templates.md    # Product developer alignment framing templates
 │
 └── [future-skills]/                    # Future modular skills follow the same architecture
 ```
