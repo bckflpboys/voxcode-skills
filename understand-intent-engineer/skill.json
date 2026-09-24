@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "understand-intent-engineer",
+  "displayName": "Understand Intent Engineer",
+  "version": "1.0.0",
+  "description": "Specialized engineering and technical skill that decodes unstated technical requirements, mathematical invariants, algorithmic goals, systems architecture, and scientific computing intent from codebases, equations, and technical drafts.",
+  "author": "VoxCode.app",
+  "license": "MIT",
+  "keywords": [
+    "engineering-intent",
+    "systems-architecture",
+    "algorithm-optimization",
+    "mathematical-modeling",
+    "scientific-computing",
+    "numerical-stability",
+    "concurrency-and-race-conditions",
+    "type-systems",
+    "codebase-archaeology"
+  ],
+  "entrypoints": {
+    "agentSkill": "SKILL.md",
+    "universalDocumentation": "README.md",
+    "systemPrompt": "prompt.md",
+    "manifest": "skill.json"
+  },
+  "compatibility": {
+    "antigravity": ">=1.0.0",
+    "cursor": ">=0.40.0",
+    "claudeCode": ">=1.0.0",
+    "copilot": "all",
+    "genericLLM": "all",
+    "openaiCustomGpt": "all"
+  },
+  "triggers": [
+    "Debugging or optimizing complex code, algorithms, or systems",
+    "Mathematical modeling, formula derivation, or scientific computing",
+    "Concurrency, distributed state, mutexes, or async pipeline issues",
+    "High-performance computing, memory optimization, or cache locality",
+    "Refactoring technical architectures while preserving domain invariants",
+    "Terse engineering prompts with complex underlying requirements"
+  ],
+  "categories": [
+    "engineering-and-systems",
+    "mathematics-and-science",
+    "algorithm-optimization",
+    "technical-reasoning"
+  ]
+}

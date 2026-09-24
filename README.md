@@ -27,6 +27,7 @@ Different AI apps, agent frameworks, and developer environments consume instruct
 | :--- | :--- | :--- | :--- |
 | **Flow Simulation** (`flow-simulation`) | Reliability & Verification | Forces AI models to trace end-to-end execution routes, analyze blast radius, mentally simulate workflows, and verify regressions before and after code changes. | [Folder](./flow-simulation) • [Doc](./flow-simulation/README.md) • [Prompt](./flow-simulation/prompt.md) |
 | **Understand Intent** (`understand-intent`) | Universal Reasoning | Decodes unstated goals across ANY domain (teaching, lesson plans, forms, business, writing, code). Proactively delivers complete packages without tunnel vision. | [Folder](./understand-intent) • [Doc](./understand-intent/README.md) • [Prompt](./understand-intent/prompt.md) |
+| **Understand Intent Engineer** (`understand-intent-engineer`) | Engineering & Systems | Decodes technical requirements, mathematical invariants, Big-O complexity, concurrency models, and systems architecture from technical requests. | [Folder](./understand-intent-engineer) • [Doc](./understand-intent-engineer/README.md) • [Prompt](./understand-intent-engineer/prompt.md) |
 
 *(More skills coming soon...)*
 
@@ -141,6 +142,20 @@ voxcode-skills/
 │   │   └── code-refactor-intent.md          # WIP code intent & optimization case study
 │   └── resources/
 │       └── intent-alignment-template.md # Multi-domain framing templates for user alignment
+│
+├── understand-intent-engineer/         # Skill: Understand Intent Engineer
+│   ├── SKILL.md                        # Technical agentic standard skill file with frontmatter
+│   ├── README.md                       # Universal self-contained technical docs & prompt
+│   ├── prompt.md                       # Direct copy-paste system prompt
+│   ├── skill.json                      # Machine-readable JSON manifest
+│   ├── references/
+│   │   ├── engineering-intent-checklist.md # Deep technical audit checklist
+│   │   └── technical-signals-guide.md      # Signals in types, runtimes, formulas & memory
+│   ├── examples/
+│   │   ├── math-algorithm-intent.md        # Scientific simulation & vectorization case study
+│   │   └── systems-architecture-intent.md  # Concurrency, mutexes & backpressure case study
+│   └── resources/
+│       └── technical-alignment-templates.md # High-signal engineering dialogue templates
 │
 └── [future-skills]/                    # Future modular skills follow the same architecture
 ```

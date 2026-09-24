@@ -29,6 +29,18 @@
       "prompt": "./understand-intent/prompt.md",
       "description": "Universal skill guiding AI models to decode true underlying human intent across all domains—including teaching, classroom planning, office administration, business forms, creative writing, and engineering.",
       "category": "universal-reasoning"
+    },
+    {
+      "name": "understand-intent-engineer",
+      "displayName": "Understand Intent Engineer",
+      "version": "1.0.0",
+      "path": "./understand-intent-engineer",
+      "manifest": "./understand-intent-engineer/skill.json",
+      "skillFile": "./understand-intent-engineer/SKILL.md",
+      "readme": "./understand-intent-engineer/README.md",
+      "prompt": "./understand-intent-engineer/prompt.md",
+      "description": "Specialized engineering skill that decodes unstated technical requirements, mathematical invariants, algorithmic complexity, systems architecture, and scientific computing intent.",
+      "category": "engineering-and-systems"
     }
   ]
 }
